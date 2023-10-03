@@ -48,8 +48,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
    
 body{
     background-color:#F8F8F8;
-    overflow: hidden;
-    width: 100%;
 }
 .first-block__read-more:visited{
     color: #000;
@@ -201,6 +199,7 @@ display: none;
     background-color:#F8F8F8;
     letter-spacing: -0.20000000298023224px;
     text-align: center;
+    border: 0px;
 
 }
 .side-menu__button--active{
@@ -388,5 +387,9 @@ display: none;
     }
     .side-menu__nav::before{
         display: none;
+    }
+    .side-menu__button{
+        padding-left: 19px;
+        padding-right: 19px;
     }
 }
