@@ -6,36 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Методология БЭМ</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   </head>
   <body>
     <header class="header">
-      <div class="header--position--left">
-        <button class="header__button button burger" type="button">
-          <img src="image/burger.svg" alt="icon">
-        </button>
-        <div class="header__logo">
-          <img src="image/logo.svg" alt="logo">
-        </div>
-        <div class="header__highlight header__highlight--order"></div>
-      </div>
-      <div class="header--position--right">
-        <button class="header__button button call" type="button">
-          <img src="image/call.svg" alt="icon">
-        </button>
-        <button class="header__button button chat" type="button">
-          <img src="image/chat.svg" alt="icon">
-        </button>
-        <button class="header__button button profile" type="button">
-          <img src="image/profile.svg" alt="icon">
-        </button>
+      <button class="header__button button " type="button"> <img src="images/burger.svg" alt="icon"> </button>
+      <div class="header__logo"> <img src="images/logo.svg" alt="logo"> </div>
+      <div class="header__highlight header__highlight--order"></div>
+      <div class="heder__right-menu right-menu">
+        <button class="right-menu__button right-menu__button--more button " type="button"> <img src="images/call.svg" alt="icon"> </button>
+        <button class="right-menu__button right-menu__button--more button " type="button"> <img src="images/chat.svg" alt="icon"> </button>
+        <button class="right-menu__button right-menu__button--more button " type="button"> <img src="images/profile.svg" alt="icon"> </button>
         <div class="header__highlight header__highlight--visibility"></div>
-        <button class="header__button button repair" type="button">
-          <img src="image/repair.svg" alt="icon">
-        </button>
-        <button class="header__button button checkstatus" type="button">
-          <img src="image/checkstatus.svg" alt="icon">
-        </button>
+        <button class="right-menu__button button" type="button"> <img src="images/repair.svg" alt="icon"> </button>
+        <button class="right-menu__button button" type="button"> <img src="images/checkstatus.svg" alt="icon"> </button>
       </div>
     </header>
     <main class="body">
@@ -44,32 +29,30 @@
           <div class="title__highlight"></div> Услуги и сервисы
         </h1>
         <div class="title__buttons">
-          <button class="title__button button repair" type="button">
-            <img src="image/repair.svg" alt="icon">
+          <button class="title__button title__button--repair button " type="button">
+            <img src="images/repair.svg" alt="icon">
           </button>
-          <button class="title__button button checkstatus" type="button">
-            <img src="image/checkstatus.svg" alt="icon">
+          <button class="title__button title__button--checkstatus button " type="button">
+            <img src="images/checkstatus.svg" alt="icon">
           </button>
         </div>
       </section>
       <section class="body__side-menu side-menu">
         <nav class="side-menu__nav">
-          <button class="side-menu__button side-menu__button--active" type="button">Ремонтируемые устройства</button>
-          <button class="side-menu__button" type="button">Ремонтируемые бренды</button>
-          <button class="side-menu__button" type="button">Цены на услуги</button>
-          <button class="side-menu__button" type="button">Адреса сервисных центров</button>
-          <button class="side-menu__button" type="button">Специальные цены</button>
-          <button class="side-menu__button" type="button">Отзывы</button>
+          <a class="side-menu__button side-menu__button--active"  href="#">Ремонтируемые устройства</a>
+          <a class="side-menu__button" href="#" >Ремонтируемые бренды</a>
+          <a class="side-menu__button" href="#" >Цены на услуги</a>
+          <a class="side-menu__button" href="#" >Адреса сервисных центров</a>
+          <a class="side-menu__button" href="#" >Специальные цены</a>
+          <a class="side-menu__button" href="#" >Отзывы</a>
         </nav>
       </section>
       <section class="body__first-block first-block">
         <article class="first-block--body">
-          <p class="first-block__text"> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. </p>
-          <p class="first-block__text first-block__text--version--1"> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера </p>
-          <p class="first-block__text first-block__text--version--2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+          <p class="first-block__text"> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. <span class="first-block__text--visible--1"><br />Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="first-block__text--visible--2">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></span> </p>
           <a class="first-block__read-more" href="#"> Читать далее </a>
         </article>
-        <img class="first-block__img" src="image/img.png" alt="company logo">
+        <img class="first-block__img" src="images/img.png" alt="company logo">
       </section>
     </main>
   </body>

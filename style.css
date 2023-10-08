@@ -1,52 +1,12 @@
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
-@font-face {
-    font-family: 'TT Lakes';
-    src: url('TTLakes/TTLakes-Bold.eot');
-    src: local('TTLakes/TT Lakes Bold'), local('TTLakes-Bold'),
-        url('TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('TTLakes/TTLakes-Bold.woff') format('woff'),
-        url('TTLakes/TTLakes-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    }
-@font-face {
-    font-family: 'TT Lakes';
-    src: url('TTLakes/TTLakes-Medium.eot');
-    src: local('TTLakes/TT Lakes Medium'), local('TTLakes-Medium'),
-        url('TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-        url('TTLakes/TTLakes-Medium.woff') format('woff'),
-        url('TTLakes/TTLakes-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-    
-@font-face {
-    font-family: 'TT Lakes_r';
-    src: url('TTLakes/TTLakes-Regular.eot');
-    src: local('TTLakes/TT Lakes Regular'), local('TTLakes-Regular'),
-        url('TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-        url('TTLakes/TTLakes-Regular.woff') format('woff'),
-        url('TTLakes/TTLakes-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-   
 body{
+    margin:0;
     background-color:#F8F8F8;
 }
 .first-block__read-more:visited{
@@ -61,52 +21,45 @@ body{
     background-color:#FFFFFF;
     display:flex;
     align-items:center;
-    margin-bottom:23px;
-    border-bottom: 1px solid #D9FFF5;;
+    padding: 0 16px;
+    border-bottom: 1px solid #D9FFF5;
+
+}
+.button{
+    width:40px ;
+    height: 40px; 
+    background-color: #FF3E79;
+    border: 0;
+    border-radius: 50%;
+    padding:0;
 }
 .header__highlight{
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
     border-radius: 1px;   
-}
-.header--position--right {
-    margin-left: auto;
-    display: flex;
-}
-.header--position--left {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: auto;
-}
-.burger { 
     margin-left: 16px;
-    margin-right: 16px;
 }
-.header__logo {
-    display: block;
-    margin-right: 16px;
+
+.header__logo{
+    margin-left: 16px;
 }
-.call{
-    display: none;
+.heder__right-menu{
+    margin-left: auto;
 }
-.chat{
-    display: none;
+.right-menu__button{
+    margin-left: 16px;
 }
-.profile{
-    display: none;
+.right-menu{
+display: inline-flex;
+}
+.right-menu__button--more{
+    display:none;
 }
 .header__highlight--visibility{
     display: none;
-    align-self: center;
 }
-.repair {
-    margin-right: 16px;
-}
-.checkstatus {
-    margin-right: 16px;
-}
+
 .body__title {
     padding-left: 16px;
     margin-bottom: 22px;
@@ -125,17 +78,13 @@ body{
 display: none;
 }
 .title__button{
-    position: relative;     
-}
-.button{
-    width:40px ;
-    height: 40px; 
-    background-color: #FF3E79;
-    border: 0;
-    border-radius: 50%;
+    position: relative;  
+    margin-right: 33px; 
+    margin-left:130px;
 }
 
-.repair::before{
+
+.title__button--repair::before{
     content: 'Оставить заявку';
     position: absolute;
     right: 100%;             
@@ -147,7 +96,7 @@ display: none;
     letter-spacing: -0.20000000298023224px;
    
 }
-.checkstatus::before{
+.title__button--checkstatus::before{
     content: 'Оставить заявку';
     position: absolute;
     right: 100%;             
@@ -198,8 +147,8 @@ display: none;
     line-height: 24px;
     background-color:#F8F8F8;
     letter-spacing: -0.20000000298023224px;
-    text-align: center;
-    border: 0px;
+    text-decoration: none;
+   
 
 }
 .side-menu__button--active{
@@ -221,13 +170,14 @@ display: none;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
     margin-bottom:10px;
+    margin-top:0;
     
 
 }
-.first-block__text--version--1{
+.first-block__text--visible--1{
     display:none;
 }
-.first-block__text--version--2{
+.first-block__text--visible--2{
     display:none;
 }
 .first-block__read-more {
@@ -246,62 +196,62 @@ display: none;
     display: inline-flex;
     width: 24px;
     height:24px;
-    background-image: url(/code/image/arrows.svg);
+    background-image: url(images/arrows.svg);
     background-size: 100%;
     margin-right: 6px;
-    background-position-y:5px;
+    background-position-y:6px;
     background-repeat: no-repeat;
     padding-bottom: 2px;
     margin-bottom: 21px;
 }
-.first-block__img {
-   max-width: 360px;
-    height: auto;
 
- 
-}
 .title__buttons{
     margin-left: auto;
     display: none;
 }
+@media (min-width: 650px) {
+    .first-block__img {
+        max-width: 360px;
+        height: auto;
+        width: 50%;
+        border-radius: 10px;
+    }
 
+    .first-block{
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .first-block--body{
+        width: 50%;
+    }
+}
 
 @media (min-width: 768px) {
-    .burger { 
-        order: 1;
-        margin-left: 24px;
-        margin-right:24px;
+    .header{
+        padding: 0 24px;
     }
-    .header__logo {
-        order: 3;
-        margin-right: 0;
-    
+    .header__button{
+        order:-2;
+    }
+    .header__highlight{
+        margin-left: 24px;
     }
     .header__highlight--order{
-        order: 2;
-        margin-right:24px ;
+        order: -1;
     }
-    .call{
-        display: block;
-        margin-right: 24px;
+    .header__logo{
+        margin-left: 24px;
+        
     }
-    .chat{
-        display: block;
-        margin-right: 24px;
+    .right-menu__button{
+        margin-left: 24px;
     }
-    .profile{
-        display: block;
-        margin-right: 24px;
+    .right-menu__button--more{
+        display:block;
     }
     .header__highlight--visibility{
-        display: block;
-        margin-right: 24px;
-    }
-    .repair {
-        margin-right: 24px;
-    }
-    .checkstatus {
-        margin-right: 24px;
+        align-self: center;
+        display:block;
     }
     .body__title {
         margin-bottom: 30px;
@@ -310,8 +260,7 @@ display: none;
     .first-block{
         margin-right: 24px;
         margin-left: 24px;
-        flex-direction: row;
-        justify-content: space-between;
+        
     }
     .side-menu__nav{
         margin-left: 24px;
@@ -324,21 +273,20 @@ display: none;
     .first-block__text{
         margin-left: 0;
         line-height: 20px;
+        margin-right: 31px;
     }
     
     .first-block__read-more {
         margin-left: 0;
     }
     .first-block--body{
-        width: 50%;
+        
         padding-right: 30px;
     }
     .first-block__img{
-        width: 50%;
         max-width: 531.35px;
-        border-radius: 10px;
     }
-    .first-block__text--version--1{
+    .first-block__text--visible--1{
         display: block;
     }
 }  
@@ -364,10 +312,8 @@ display: none;
     .first-block__text{
         margin-right: 20px;
     }
-    .first-block__text--version--1{
-        display: none;
-    }.first-block__text--version--2{
-        display: block;
+    .first-block__text--visible--2{
+        display: inline;
     }
     .body__services{
         display: flex;
@@ -376,14 +322,10 @@ display: none;
     .title__buttons{
         display: flex;
     }
-    .repair {
-        margin-right: 164px;
-    }
-    .checkstatus{
-        margin-right: 32px;
-    }
     .body__title{
+        padding-left: 33px;
         margin-bottom: 0px; 
+        margin-top: 0;
     }
     .side-menu__nav::before{
         display: none;
