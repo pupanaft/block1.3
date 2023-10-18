@@ -261,10 +261,13 @@ display: none;
 }
 .main-menu__nav{
     margin-left: 24px;
+    height: 100%;
 }
 .nav__lists{
     display: flex;
-    height: 412px;
+    height: inherit;
+    max-height: 412px;
+    min-height:275px;
     flex-flow: column nowrap;
     justify-content: space-between;
 }
@@ -292,9 +295,10 @@ display: none;
     top: -4px;
 }
 .main-menu__footer{
-    margin-top: auto;
+    margin-top: 30px;
     margin-left: 24px;
     margin-bottom: 32px;
+   
 }
 .main-menu__contact{
     margin-bottom: 40px;
