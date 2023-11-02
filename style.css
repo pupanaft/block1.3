@@ -213,6 +213,8 @@ body{
 .read-more__icon{
     position: relative;
     top: 6px;
+    transition-duration: 0.5s;
+    transition-property: all;
 }
 .read-more__button{
     background-color: #F8F8F8;
@@ -360,6 +362,100 @@ display: none;
 .lang__link--active{
     color:#7E7E82;
 }
+.content-box{
+    border-top:1px solid #D9FFF5;
+}
+.content-box__header{
+    padding-left: 24px;
+    background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.content-box__title{
+    font-family: "TT Lakes-l";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    color: #7E7E82;
+
+}
+.content-box__brands{
+    margin-left:16px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    
+}
+.swiper::before{
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 0;
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 100;
+}
+.brands{
+    width: auto;
+    display: flex;
+}
+.brands__logo-wrapper{
+    display: flex;
+    align-self: center;
+    padding-left: 16px;
+}
+.brands__item{
+    position: relative;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    display: flex;
+    width: 240px;
+    height: 72px;
+    margin: 0;
+    background-color:#FFFFFF;
+    flex-shrink: 0;
+}
+.brands__link{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 72px;
+    width: 240px;
+
+}
+.brands__button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    background:15px url(images/dropdown.svg) no-repeat  ;
+    right: 16px;
+    border-radius: 50%;
+    border: 2px solid #FF3E79;
+    transition-duration: 1s;
+    transition-property: all;
+}
+.content-box__wrapper{
+    height: 192px;
+    overflow: hidden;
+}
+.content-box__wrapper--more{
+    height: 350px;
+    overflow: visible;
+}
+.swiper-wrapper{
+    box-sizing: content-box;
+}
+.content-box__read-more{
+   display: none;
+}
+.read-more__icon--active{
+    transform: rotate(180deg);
+}
+.swiper-slide{
+    list-style-type: none;
+    width: auto;
+}
 @media (min-width: 650px) {
     .about{
         flex-direction: row;
@@ -433,9 +529,47 @@ display: none;
     .text{
         line-height: 20px;
     }
-}  
+    .content-box__read-more{
+        display: inline;
+        margin-left:24px;
+    }
+    .brands{
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 24px;
+    }
+    .content-box__brands{
+        margin: 24px;
+        margin-bottom: 0;
+    }
+    .brands__item{
+        width: 224px;
+    }
+    .brands__link{
+        width: 224px;
+    }
+    .swiper-wrapper{
+        box-sizing: border-box;
+    }
+    .swiper{
+        box-sizing: border-box;
+    }
+}
+@media (min-width: 1016px) {
+    .content-box__wrapper--more {
+        height: 262px;
+        overflow: visible;
+    }
+}
 
 @media (min-width: 1120px) {
+    .content-box__brands{
+        margin: 24px 32px;
+        margin-bottom: 0;
+    }
+    .brands{
+        column-gap: 32px;
+    }
     .header{
         display: none;
     }
@@ -478,5 +612,14 @@ display: none;
     }
     .aside__header{
         display: flex;
+    }
+    .content-box__read-more{
+        margin-left:32px;
+    }
+    .brands__item{
+        width: 240px;
+    }
+    .brands__link{
+        width: 240px;
     }
 }
