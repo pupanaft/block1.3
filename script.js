@@ -6,7 +6,7 @@ let readMoreText = document.querySelector('.read-more__text');
 readMoreButton.onclick = () =>{
     pageWrapper.classList.toggle('content-box__wrapper--more');
     buttonIcon.classList.toggle('read-more__icon--active');
-    readMoreText.textContent = buttonIcon.classList.contains('read-more__icon--active') ? readMoreText.textContent = 'Скрыть':'Показать все'
+    readMoreText.textContent = buttonIcon.classList.contains('read-more__icon--active') ? 'Скрыть':'Показать все'
 }
 
 
