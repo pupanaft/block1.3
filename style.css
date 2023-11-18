@@ -372,6 +372,7 @@ display: none;
     padding-bottom: 16px;
 }
 .content-box__title{
+    text-transform: uppercase;
     font-family: "TT Lakes-l";
     font-size: 16px;
     line-height: 24px;
@@ -421,7 +422,10 @@ display: none;
     left: 0;
     height: 72px;
     width: 240px;
-
+}
+.brands__link:hover{
+    border-radius: 5px;  
+    box-shadow: 0px 0px 20px -12px rgb(175, 175, 175) inset;
 }
 .brands__button{
     position: absolute;
