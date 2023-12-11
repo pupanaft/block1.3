@@ -751,9 +751,6 @@ body {
 .site--fogOfWar {
   overflow: hidden; }
 
-.site--fogOfWar-v2 {
-  overflow: hidden; }
-
 .aside--burger::after {
   background: #FFF;
   z-index: 1; }
