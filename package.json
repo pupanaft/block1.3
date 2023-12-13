@@ -1,0 +1,22 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "https://pupanaft.github.io/block1.3/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pupanaft/block1.3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pupanaft/block1.3/issues"
+  },
+  "homepage": "https://github.com/pupanaft/block1.3#readme",
+  "dependencies": {
+    "swiper": "^11.0.5"
+  }
+}
